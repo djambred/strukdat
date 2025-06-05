@@ -3,10 +3,6 @@ set -e
 
 echo "🚀 Starting Laravel container setup..."
 
-# Step 0: Clean the target directory to avoid "directory is not empty" error
-echo "🧹 Cleaning up /var/www/html/..."
-rm -rf /var/www/html/* /var/www/html/.* || true
-
 # Step 1: Create Laravel project if not already present
 if [ ! -f /var/www/html/artisan ]; then
   echo "📦 Creating Laravel project (fila-starter)..."
