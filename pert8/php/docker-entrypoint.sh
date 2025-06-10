@@ -26,8 +26,8 @@ APP_ENV=local
 APP_KEY=base64:jU6xg8sp9ia37ypFlTVk1CAFx6MmeXRukO1W987uUzI=
 APP_DEBUG=true
 APP_TIMEZONE='Asia/Jakarta'
-APP_URL=http://localhost
-ASSET_URL=http://localhost
+APP_URL=https://strukdat.test
+ASSET_URL=https://strukdat.test
 DEBUGBAR_ENABLED=false
 ASSET_PREFIX=
 # ASSET_PREFIX=/dev/kit/public example in case deployed inside a folder
@@ -102,8 +102,8 @@ APP_ENV=local
 APP_KEY=base64:jU6xg8sp9ia37ypFlTVk1CAFx6MmeXRukO1W987uUzI=
 APP_DEBUG=true
 APP_TIMEZONE='Asia/Jakarta'
-APP_URL=http://localhost
-ASSET_URL=http://localhost
+APP_URL=https://strukdat.test
+ASSET_URL=https://strukdat.test
 DEBUGBAR_ENABLED=false
 ASSET_PREFIX=
 # ASSET_PREFIX=/dev/kit/public example in case deployed inside a folder
