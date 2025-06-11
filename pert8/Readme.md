@@ -32,7 +32,11 @@ PS C:\Users\djamb\Documents\ssl> Add-Content -Path "C:\Windows\System32\drivers\
 ```php
 Add-Content -Path "C:\Windows\System32\drivers\etc\hosts" -Value "`n127.0.0.1 strukdat.test"
 ```
+TO REMOVE POINTING HOSTS WITH POWERSHELL
+```php
+(Get-Content "$env:windir\System32\drivers\etc\hosts") | Where-Object { $_ -notmatch 'strukdat\.dev' } | Set-Content -Force "$env:windir\System32\drivers\etc\hosts"
 
+```
 ADD HOST IN WSL
 ```php
 nano /etc/hosts
@@ -41,3 +45,14 @@ nano /etc/hosts
 127.0.0.1 strukdat.test
 ```
 CTRL + x Y enter
+
+ADDED IN WSL
+```php
+nano /root/.zshrc
+```
+```php
+alias dcm='docker exec -it $(docker ps --format "{{.Image}} {{.Names}}" | grep "_php:latest" | head -n 1 | awk "{print \$2}") art'
+```
+```php
+source /root/.zshrc
+```
