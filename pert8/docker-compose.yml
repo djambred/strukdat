@@ -11,7 +11,7 @@ services:
     depends_on:
       - strukdat_db
   strukdat_db:
-    image: mariadb:10.2
+    image: mariadb:10.11
     container_name: strukdat_db
     restart: unless-stopped
     tty: true
