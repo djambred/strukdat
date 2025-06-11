@@ -32,7 +32,7 @@ nano /etc/hosts
 ```php
 127.0.0.1 strukdat.test
 ```
-CTRL + x Y enter
+(UNTUK KELUAR DAN SIMPAN) CTRL + x Y enter
 
 ADDED IN WSL
 ```php
@@ -41,6 +41,8 @@ nano /root/.zshrc
 ```php
 alias dcm='docker exec -it $(docker ps --format "{{.Image}} {{.Names}}" | grep "_php:latest" | head -n 1 | awk "{print \$2}") art'
 ```
+(UTK KELUAR DAN SIMPAN) CTRL + x Y enter
+
 ```php
 source /root/.zshrc
 ```
